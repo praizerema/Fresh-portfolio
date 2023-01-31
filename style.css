@@ -12,7 +12,22 @@
   height: 100%;
   padding: 0 6%;
 }
-
+.responsive-nav a,li {
+text-align: left;
+text-decoration: none;
+list-style: none;
+color: #fff;
+margin-bottom: 10px
+}
+.responsive-nav{
+  background: #3c3a39;
+width: 100%;
+position: absolute;
+left:0;
+top: 60px;
+height: 200px;
+z-index: 1
+}
 body {
   padding: 0;
   margin: 0;
@@ -31,7 +46,7 @@ body {
   font-size: 56px;
   font-family: Crete Round, sans-serif;
   font-weight: 700;
-  color: #ff6b00;
+  color: #df0bfb;
   margin: 15px 0;
   animation: scale 5s  alternate;
   -webkit-animation: scale 5s  alternate;
@@ -96,18 +111,64 @@ body {
   height: 386px;
   background:
     linear-gradient(
-      180.45deg,
+      0deg,
       rgba(38, 38, 38, 0) 6.75%,
       rgba(38, 38, 38, 0.6) 70.94%
     ),
-    url(./images/ImgPlaceholder1.png);
+    url(./images/rosabon.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 80px;
+  box-shadow: inset 0 0 0 2000px rgba(38, 38, 38, 0.7);
+}
+
+.cozycollections {
+  height: 386px;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(38, 38, 38, 0) 6.75%,
+      rgba(38, 38, 38, 0.6) 70.94%
+    ),
+    url(./images/cozycollections.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+  box-shadow: inset 0 0 0 2000px rgba(38, 38, 38, 0.7);
 }
 
 .recentWorkImg {
   width: 100%;
+}
+
+.seerbit {
+  height: 386px;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(38, 38, 38, 0) 6.75%,
+      rgba(38, 38, 38, 0.6) 70.94%
+    ),
+    url(./images/seerbit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+  box-shadow: inset 0 0 0 2000px rgba(38, 38, 38, 0.7);
+}
+
+.glade {
+  height: 386px;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(38, 38, 38, 0) 6.75%,
+      rgba(38, 38, 38, 0.6) 70.94%
+    ),
+    url(./images/glade.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+  box-shadow: inset 0 0 0 2000px rgba(38, 38, 38, 0.7);
 }
 
 .recentWorkImg > img {
@@ -122,16 +183,18 @@ body {
 }
 
 .font-32 {
-  font-size: 32px;
+  font-size: 26px;
   font-family: Crete Round, sans-serif;
-  color: #091e42;
+  color: #fff;
 }
 
 .stackList {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 4px
 }
 
 .stackBox {
@@ -142,10 +205,10 @@ body {
 }
 
 .btn-orange {
-  background: #ff6b00;
+  background: #df0bfb;
   height: 48px;
   width: 124px;
-  border: 1px solid #ff6b00;
+  border: 1px solid #df0bfb;
   margin: 20px 0;
   color: #fff;
   font-size: 17px;
@@ -153,19 +216,22 @@ body {
 }
 
 .btn-orange1 {
-  background: #ff6b00;
+  background: #df0bfb;
   height: 48px;
   width: 100%;
-  border: 1px solid #ff6b00;
+  border: 1px solid #df0bfb;
   margin: 20px 0;
   color: #fff;
   font-size: 17px;
   font-weight: 700;
 }
 
+.btn-orange1 a{
+  text-decoration: none;
+  color: white
+}
 .professional-data-txt {
   color: #fff;
-  margin-top: 75px;
   line-height: 44px;
 }
 
@@ -201,22 +267,29 @@ body {
   font-size: 72px;
   font-family: Crete Round, sans-serif;
   font-weight: 700;
-  color: #ff6b00;
+  color: #df0bfb;
   margin: 15px 0;
   text-align: center;
 }
 
 .btn-orange3 {
-  background: #ff6b00;
+  background: #df0bfb;
   height: 48px;
   width: 161px;
-  border: 1px solid #ff6b00;
+  border: 1px solid #df0bfb;
   margin: 20px 0;
   color: #fff;
   font-size: 17px;
   font-weight: 700;
 }
-
+.btn-orange a{
+  text-decoration: none;
+  color: #fff 
+}
+.btn-orange3 a{
+  text-decoration: none;
+  color: #fff 
+}
 .mainStackWrap {
   margin: auto;
   text-align: center;
@@ -290,7 +363,7 @@ body {
 }
 
 #get-touch-btn {
-  background-color: #ff6b00;
+  background-color: #df0bfb;
   border: none;
   height: 48px;
   width: 131px;
@@ -415,22 +488,35 @@ footer > .socialPagesWrap {
 
   .recentWorkContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
   }
+  .h-60{
+    min-height:60px;
+  }
+  
+  .h-80{
+    min-height:80px;
+  }
+  
+  .h-110{
+    min-height:110px;
+  }
 
-  .recentWorkImg1 {
+  .recentWorkImg1, .glade, .seerbit {
     margin: 0 15px 80px 0;
   }
 
   .recentWorkImg1:hover {
     margin: 0 15px 80px 15px;
-    background: url(./images/ImgPlaceholder2.png);
+    background: url(./images/rosabon-1.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     cursor: pointer;
+  height: 386px;
+
   }
 
   .about-me-wrap {
@@ -666,6 +752,17 @@ footer > .socialPagesWrap {
   .stackList {
     width: 90%;
   }
+  .h-60{
+    min-height:60px;
+  }
+  
+  .h-80{
+    min-height:80px;
+  }
+  
+  .h-110{
+    min-height:110px;
+  }
 }
 
 .btn-animation:hover {
@@ -690,3 +787,4 @@ footer > .socialPagesWrap {
 @keyframes scale {
   to { transform: scale(0.8); }
 }
+
