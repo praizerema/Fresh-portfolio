@@ -157,14 +157,14 @@ body {
   box-shadow: inset 0 0 0 2000px rgba(38, 38, 38, 0.7);
 }
 
-.glade {
+.greenerplaces {
   height: 386px;
   background: linear-gradient(
       0deg,
       rgba(38, 38, 38, 0) 6.75%,
       rgba(38, 38, 38, 0.6) 70.94%
     ),
-    url(./images/glade.png);
+    url(./images/greener-places.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 80px;
