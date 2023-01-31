@@ -12,22 +12,26 @@
   height: 100%;
   padding: 0 6%;
 }
-.responsive-nav a,li {
-text-align: left;
-text-decoration: none;
-list-style: none;
-color: #fff;
-margin-bottom: 10px
+
+.responsive-nav a,
+  li {
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    margin-bottom: 10px
 }
-.responsive-nav{
+
+.responsive-nav {
   background: #3c3a39;
-width: 100%;
-position: absolute;
-left:0;
-top: 60px;
-height: 200px;
-z-index: 1
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  height: 200px;
+  z-index: 1;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -48,8 +52,8 @@ body {
   font-weight: 700;
   color: #df0bfb;
   margin: 15px 0;
-  animation: scale 5s  alternate;
-  -webkit-animation: scale 5s  alternate;
+  animation: scale 5s alternate;
+  -webkit-animation: scale 5s alternate;
 }
 
 .roleText {
@@ -109,8 +113,7 @@ body {
 
 .recentWorkImg1 {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       0deg,
       rgba(38, 38, 38, 0) 6.75%,
       rgba(38, 38, 38, 0.6) 70.94%
@@ -124,8 +127,7 @@ body {
 
 .cozycollections {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       0deg,
       rgba(38, 38, 38, 0) 6.75%,
       rgba(38, 38, 38, 0.6) 70.94%
@@ -143,8 +145,7 @@ body {
 
 .seerbit {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       0deg,
       rgba(38, 38, 38, 0) 6.75%,
       rgba(38, 38, 38, 0.6) 70.94%
@@ -158,8 +159,7 @@ body {
 
 .glade {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       0deg,
       rgba(38, 38, 38, 0) 6.75%,
       rgba(38, 38, 38, 0.6) 70.94%
@@ -194,7 +194,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 4px
+  gap: 4px;
 }
 
 .stackBox {
@@ -226,9 +226,9 @@ body {
   font-weight: 700;
 }
 
-.btn-orange1 a{
+.btn-orange1 a {
   text-decoration: none;
-  color: white
+  color: white;
 }
 .professional-data-txt {
   color: #fff;
@@ -282,13 +282,13 @@ body {
   font-size: 17px;
   font-weight: 700;
 }
-.btn-orange a{
+.btn-orange a {
   text-decoration: none;
-  color: #fff 
+  color: #fff;
 }
-.btn-orange3 a{
+.btn-orange3 a {
   text-decoration: none;
-  color: #fff 
+  color: #fff;
 }
 .mainStackWrap {
   margin: auto;
@@ -493,19 +493,21 @@ footer > .socialPagesWrap {
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  .h-60{
-    min-height:60px;
-  }
-  
-  .h-80{
-    min-height:80px;
-  }
-  
-  .h-110{
-    min-height:110px;
+  .h-60 {
+    min-height: 60px;
   }
 
-  .recentWorkImg1, .glade, .seerbit {
+  .h-80 {
+    min-height: 80px;
+  }
+
+  .h-110 {
+    min-height: 110px;
+  }
+
+  .recentWorkImg1,
+  .glade,
+  .seerbit {
     margin: 0 15px 80px 0;
   }
 
@@ -515,8 +517,7 @@ footer > .socialPagesWrap {
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-  height: 386px;
-
+    height: 386px;
   }
 
   .about-me-wrap {
@@ -752,16 +753,16 @@ footer > .socialPagesWrap {
   .stackList {
     width: 90%;
   }
-  .h-60{
-    min-height:60px;
+  .h-60 {
+    min-height: 60px;
   }
-  
-  .h-80{
-    min-height:80px;
+
+  .h-80 {
+    min-height: 80px;
   }
-  
-  .h-110{
-    min-height:110px;
+
+  .h-110 {
+    min-height: 110px;
   }
 }
 
@@ -771,20 +772,43 @@ footer > .socialPagesWrap {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 @keyframes scale {
-  to { transform: scale(0.8); }
+  to {
+    transform: scale(0.8);
+  }
 }
-
